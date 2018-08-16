@@ -1,5 +1,6 @@
 ### 我的博客
 
+我的地址：[https://xzchsia.github.io/](https://xzchsia.github.io/)
 基于原地址修改：[http://yansu.org](http://yansu.org)
 
 ### 安装说明
