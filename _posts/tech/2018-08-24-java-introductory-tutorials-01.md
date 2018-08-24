@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 快速教程 之 Java基础01 从HelloWorld到面向对象 
+title: Java基础01 从HelloWorld到面向对象 
 category: 技术
 tags: Java
 keywords: Java
@@ -13,7 +13,7 @@ Java是完全面向对象的语言。Java通过虚拟机的运行机制，实现
 ### "Hello World!"  
 先来看一个HelloWorld.java程序。这个程序在屏幕上打印出一串字符"Hello World!":
 
-'''java
+```java  
 public class HelloWorld  
 {  
     public static void main(String[] args)  
@@ -22,7 +22,7 @@ public class HelloWorld
     }  
 }  
 
-'''
+```
 
 程序中包括Java的一些基本特征：  
 
@@ -59,16 +59,16 @@ $java HelloWorld
  
 
 **变量(variable)** 占据一定的内存空间。不同类型的变量占据不同的大小。Java中的变量类型如下：  
-| 数据类型        | 存储大小   |  例值  |  注释  |
-| :--------:   | :-----:  | :----:  | :----:  |
-| byte     | 1byte |   3     | 字节 |
-| int      |   4bytes   |   3   | 整数 |
-| short     |    2bytes    |  3  | 短整数 |
-| long     | 8byte |   3     | 长整数 |
-| float    |  4bytes   |   1.2   | 单精度浮点数 |
-| double   |    8bytes    |  1.2  | 双精度浮点数 |
-| char     | 2byte |   'a'     | 字符 |
-| boolean   |   1bytes   |   true   | 布尔值 |
+| 数据类型        | 存储大小   |  例值  |  注释  |  
+| --------   | :-----:  | :----:  | :----:  |  
+| byte     | 1byte |   3     | 字节 |  
+| int      |   4bytes   |   3   | 整数 |  
+| short     |    2bytes    |  3  | 短整数 |  
+| long     | 8byte |   3     | 长整数 |  
+| float    |  4bytes   |   1.2   | 单精度浮点数 |  
+| double   |    8bytes    |  1.2  | 双精度浮点数 |  
+| char     | 2byte |   'a'     | 字符 |  
+| boolean   |   1bytes   |   true   | 布尔值 |  
 
 
 在Java中，变量需要先 **声明(declare)** 才能使用。在声明中，我说明变量的类型，赋予变量以特别名字，以便在后面的程序中调用它。你可以在程序中的任意位置声明变量。 比如:  
@@ -95,18 +95,21 @@ public class Test
 
 ### 数组
 Java中有 **数组(array)** 。数组包含相同类型的多个数据。我用下面方法来声明一个整数数组:
-
+```java  
 int[] a;
+```
 
 在声明数组时，数组所需的空间并没有真正分配给数组。我可以在声明的同时，用new来创建数组所需空间:
-
+```java  
 int[] a = new int[100];
+```
 
 这里创建了可以容纳100个整数的数组。相应的内存分配也完成了。
 
 我还可以在声明的同时，给数组赋值。数组的大小也同时确定。
-
+```java  
 int[] a = new int[] {1, 3, 5, 7, 9};
+```
 
 使用int[i]来调用数组的i **下标** 元素。i从0开始。
 
@@ -135,53 +138,58 @@ public class Test
 #### 数学表达式
 
 数学运算，结果为一个数值  
-| 表达式 | |
-| -----| -----|
-| 1+2 | 加法 |
-| 4 - 3.4  | 减法 |
-| 7 * 1.5 | 乘法 |
-| 3.5 / 7 | 除法 |
-| 7 % 2  | 求余数 |
+| 表达式 | 描述 |  
+| -----| -----|  
+| 1+2 | 加法 |  
+| 4 - 3.4  | 减法 |  
+| 7 * 1.5 | 乘法 |  
+| 3.5 / 7 | 除法 |  
+| 7 % 2  | 求余数 |  
+
 
 #### 关系表达式
 
 判断表达式是否成立。即一个boolean值，真假  
-| 表达式 | |
-| -----| -----|
+| 表达式 | 描述 |  
+| -----| -----|  
 | a > 4.2 | 大于 |
-| 3.4 >= b   | 大于等于 |
-| 1.5 < 9 | 小于 |
-| 6 <= 1 | 小于等于 |
-| 2 == 2  | 等于 |  
-| 2 != 2   | 不等于 |
+| 3.4 >= b   | 大于等于 |  
+| 1.5 < 9 | 小于 |  
+| 6 <= 1 | 小于等于 |  
+| 2 == 2  | 等于 |    
+| 2 != 2   | 不等于 |  
+
 
 #### 布林表达式    
 
 两个boolean值的与、或、非的逻辑关系
-| 表达式 | |
-| -----| -----|
-| true && false | and |
-| (3 > 1) \|\| (2 == 1)   | or |
-| !true |  not |
+| 表达式 | 描述 |    
+| -----| -----|  
+| true && false | and |  
+| (3 > 1) \|\| (2 == 1)   | or |  
+| !true |  not |  
+
  
 #### 位运算
 
 对整数的二进制形式逐位进行逻辑运算，得到一个整数 
-| 表达式 | |
-| -----| -----|
-| & | and |
-| \ |   | or |
-| ^ | xor |
-| ~ | not |
-| 5 << 3  | 0b101 left shift 3 bits |  
-| 6 >> 1   | 0b110 right shift 1 bit |
+| 表达式 | 描述 | 
+| -----| -----|   
+| & | and |  
+| \ |  or |  
+| ^ | xor |  
+| ~ | not |  
+| 5 << 3  | 0b101 left shift 3 bits | 
+| 6 >> 1   | 0b110 right shift 1 bit |  
+
  
 还有下列在C中常见的运算符，我会在用到的时候进一步解释:  
-| 表达式 | |
-| -----| -----|
-| m++ | 变量m加1 |
-| n--  | 变量n减1 |
-| condition ? x1 : x2  | condition为一个boolean值。根据condition，取x1或x2的值 |
+| 表达式 | 描述 |  
+| -----| -----|  
+| m++ | 变量m加1 |  
+| n--  | 变量n减1 |  
+| condition ? x1 : x2  | condition为一个boolean值。根据condition，取x1或x2的值 |  
+
 
 
 ### 控制结构  
@@ -190,6 +198,7 @@ Java中控制结构(control flow)的语法与C类似。它们都使用{}来表�
 - 选择 (if)
 
 ```java 
+
 if (conditon1) {
     statements;
     ...
@@ -202,55 +211,64 @@ else {
     statements;
     ...
 }
+
 ```  
 
 上面的condition是一个表示真假值的表达式。statements;是语句。
 
 练习 写一个Java程序，判断2013年是否是闰年。
 
-- 循环 (while)
+- 循环 (while)    
+
 ```java  
 while (condition) {
 
     statements;
 
 }
+
 ```  
 
-- 循环 (do... while)
+- 循环 (do... while)  
+
 ```java  
 do {
 
     statements;
 
 } while(condition);  // 注意结尾的;
+
 ```  
 
-- 循环 (for)
+- 循环 (for)  
+
 ```java  
 for (initial; condition; update) {
 
     statements;
 
 }  
+
 ```
 
 - 跳过或跳出循环
 
-在循环中，可以使用
+在循环中，可以使用  
+
 ```java  
 break; // 跳出循环
 
 continue; // 直接进入下一环
+
 ```
 
- 
 
 练习 写一个Java程序，计算从1加2，加3…… 一直加到999的总和
 
  
 
-- 选择 (switch)
+- 选择 (switch)  
+
 ```java  
 switch(expression) {
 
@@ -274,8 +292,9 @@ switch(expression) {
 
         break;
 
-}
-```  
+}  
+
+```
 
 
 ### 面向对象
@@ -286,7 +305,8 @@ switch(expression) {
 4. 对象可以归类(class)，或者说归为同一类型(type)。同一类型的对象有相同的方法，有同类型的数据成员。某个类型的一个对象被称为该类型的一个实例(instance)。  
  
 
-定义类的语法:
+定义类的语法:  
+
 ```java  
 class ClassName  
 {
@@ -297,7 +317,8 @@ class ClassName
 
     ...
 
-}
+}  
+
 ```  
  
 我们定义一个human类:
@@ -311,7 +332,8 @@ class Human
     }
 
     int height;
-}
+}  
+
 ```  
 
 在{}范围内，Human类有两个成员： 一个数据成员height，一个方法breath()。
@@ -343,7 +365,8 @@ class Human
     }
 
     int height;
-}
+}  
+
 ```  
 
 在main方法中，使用new关键字创建对象。即使是来自同一个类的对象，各个对象占据的内存也不相同，即对象的身份也不同。
