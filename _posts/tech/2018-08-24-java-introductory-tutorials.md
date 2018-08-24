@@ -7,13 +7,16 @@ keywords: Java
 description: Java 快速入门教程
 ---
 
-## Java 快速教程
 
-![Java Logo](https://raw.githubusercontent.com/xzchsia/xzchsia.github.io/master/assets/res/java-logo.jpg)
+-----------
+
+![Java Logo][1]
+
+------
 
 Java是面向对象语言。
 
-Java受到C和C++的强烈影响。Java与C++相近，都是静态类型，但移除了C++中容易出错的一些特征，比如指针和多重继承。Java的垃圾回收可以自动的管理和清理内存。清理内存工作转交给编译器后，程序员的负担大大减小。Java产出效率高，又有良好的运行效率，在PC端、服务器端和移动端都有不俗的表现。Android更是为Java注入新鲜血液。Java又是一门完全的面向对象语言，所以是了解其他面向对象语言的一个好范本。
+Java受到C和C++的强烈影响。Java与C++相近，都是静态类型，但移除了C++中容易出错的一些特征，比如指针和多重继承。Java的垃圾回收可以自动的管理和清理内存。清理内存工作转交给编译器后，程序员的负担大大减小。Java产出效率高，又有良好的运行效率，在PC端、服务器端和移动端都有不俗的表现。Android更是为Java注入新鲜血液。Java又是一门完全的面向对象语言，所以是了解其他面向对象语言的一个好范本。  
 
 
 ### Java之基础主要内容
@@ -69,8 +72,14 @@ Java受到C和C++的强烈影响。Java与C++相近，都是静态类型，但�
 - [ ] Java进阶10 内存管理与垃圾回收
 
 
-### Acknowledge
-原作者 Vamei 
-[https://www.cnblogs.com/vamei/](https://www.cnblogs.com/vamei/) 
-[http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html](http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html)
-    
+### Acknowledge  
+原作者 Vamei  
+
+[https://www.cnblogs.com/vamei/][2]  
+[http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html][3]
+
+
+
+[1]:https://raw.githubusercontent.com/xzchsia/xzchsia.github.io/master/assets/res/java-logo.jpg  
+[2]:https://www.cnblogs.com/vamei/  
+[3]:http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html  
