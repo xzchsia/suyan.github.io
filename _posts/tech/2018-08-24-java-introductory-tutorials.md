@@ -9,7 +9,7 @@ description: Java 快速入门教程
 
 ## Java 快速教程
 
-![Java Logo](https://images0.cnblogs.com/blog/413416/201303/31193650-11637d001c184b7fb6a906de853eece6.jpg)
+![Java Logo](https://raw.githubusercontent.com/xzchsia/xzchsia.github.io/master/assets/res/java-logo.jpg)
 
 Java是面向对象语言。
 
