@@ -27,7 +27,7 @@ keywords: git
 
 3、登陆Github, 添加 ssh 
 
-    把id_rsa.pub文件里的内容复制到github主页的setting里面的 SSH and GPG keys 里面添加
+把id_rsa.pub文件里的内容复制到github主页的setting里面的 SSH and GPG keys 里面添加
 
 4、配合TortoiseGit使用  
 
