@@ -11,6 +11,7 @@ description: mysql插入表中的中文显示为乱码或问号的解决方法
 在做项目的时候发现mysql数据库中的中文显示为问号，产生乱码的主要原因是因为选用的编码不对或者编码不一致造成的。
 
 参考原文章地址: 
+
 [https://www.cnblogs.com/houqi/p/5713176.html][orignal-paper]
 
 
@@ -38,14 +39,14 @@ description: mysql插入表中的中文显示为乱码或问号的解决方法
 
 *注意：有的版本不支持 `default-character-set=utf8` ，用 `character_set_server=utf8` 来取代  `default-character-set=utf8` 即可)* 
 
-![myini-modify][my.ini-modify]
+![myini-modify][myini-modify]
 
 
 ### 重启mysql服务
 在Windows平台可以通过下面两种方式来处理
 
-- [x] 计算机---->右键--->管理---->服务和应用程序--->服务--->找到mysql即可  
-- [x] 命令行command模式 
+- 计算机---->右键--->管理---->服务和应用程序--->服务--->找到mysql即可  
+- 命令行command模式 
 
 以管理员身份运行cmd.exe，进行如下操作。
 
@@ -88,9 +89,9 @@ description: mysql插入表中的中文显示为乱码或问号的解决方法
 
 ### 修改方法：
 
-<code> ALTER DATABASE \`数据库\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci </code>
+<code> ALTER DATABASE `数据库` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci </code>
 
-<code>ALTER TABLE \`数据表\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci</code>
+<code>ALTER TABLE `数据表` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci</code>
 
 (注：此句把表默认的字符集和所有字符列（CHAR,VARCHAR,TEXT）改为新的字符集：)
 
@@ -112,14 +113,14 @@ description: mysql插入表中的中文显示为乱码或问号的解决方法
 
 
 [orignal-paper]:https://www.cnblogs.com/houqi/p/5713176.html
-[myini]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160727234329825-116059624.png 
-[my.ini-modify]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160727235441372-2013825169.png  
-[service-cmd]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728000724903-2115750385.png  
-[character-before]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728002218231-227808784.png
-[character-after]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728002925513-232106783.png
-[error-info]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728001125966-885159927.png
-[show-table-character]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728005603872-492461123.png
-[table-character]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728010253950-463010496.png
-[filed-character]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728010641888-218387532.png
-[show-db-character]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728005213138-1510616923.png
-[ok-sup-lang]:https://images2015.cnblogs.com/blog/986643/201607/986643-20160728010906669-807329471.png
+[myini]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/myini.png 
+[myini-modify]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/myini-modify.png  
+[service-cmd]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/service-cmd.png  
+[character-before]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/character-before.png
+[character-after]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/character-after.png
+[error-info]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/error-info.png
+[show-table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/show-table-character.png
+[table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/table-character.png
+[filed-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/filed-character.png
+[show-db-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/show-db-character.png
+[ok-sup-lang]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/ok-sup-lang.png
