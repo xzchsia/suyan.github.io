@@ -113,14 +113,14 @@ description: mysql插入表中的中文显示为乱码或问号的解决方法
 
 
 [orignal-paper]:https://www.cnblogs.com/houqi/p/5713176.html
-[myini]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/myini.png 
-[myini-modify]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/myini-modify.png  
-[service-cmd]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/service-cmd.png  
-[character-before]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/character-before.png
-[character-after]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/character-after.png
-[error-info]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/error-info.png
-[show-table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/show-table-character.png
-[table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/table-character.png
-[filed-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/filed-character.png
-[show-db-character]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/show-db-character.png
-[ok-sup-lang]:https://raw.githubusercontent.com/xzchsia/MyResources/blob/master/mysql-support-chinese/ok-sup-lang.png
+[myini]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/myini.png 
+[myini-modify]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/myini-modify.png  
+[service-cmd]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/service-cmd.png  
+[character-before]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/character-before.png
+[character-after]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/character-after.png
+[error-info]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/error-info.png
+[show-table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/show-table-character.png
+[table-character]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/table-character.png
+[filed-character]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/filed-character.png
+[show-db-character]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/show-db-character.png
+[ok-sup-lang]:https://raw.githubusercontent.com/xzchsia/MyResources/master/mysql-support-chinese/ok-sup-lang.png
