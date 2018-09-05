@@ -248,12 +248,12 @@ Arrays.sort(players, (String s1, String s2) -> (s1.charAt(s1.length() - 1) - s2.
 |(str, i) -> str.substring(i) |	String::substring |
 |(String s) -> System.out.println(s) |	System.out::println |
 
-#### 方法引用的分类主要有如下四类：
+#### 方法引用的分类主要有如下四类
 
-（1）指向静态方法的方法引用；
-（2）指向任意类型实例方法的方法引用；
-（3）指向现有对象的实例方法的方法引用；
-（4）构造函数引用
+- 指向静态方法的方法引用；  
+- 指向任意类型实例方法的方法引用；  
+- 指向现有对象的实例方法的方法引用；  
+- 构造函数引用
 
 ##### （1）指向静态方法的方法引用
 
